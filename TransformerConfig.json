@@ -1,5 +1,4 @@
 {
-  "basePath":"",
   "cardRenderers":[
     {
         "SourceType": "IssueOpened",

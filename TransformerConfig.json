@@ -11,6 +11,12 @@
         "ClientType": "Teams",
         "TemplateType": "HandleBars",
         "TemplateName": "issue_opened.handlebars"
+    },
+    {
+        "SourceType": "PullRequestOpened",
+        "ClientType": "Teams",
+        "TemplateType": "Liquid",
+        "TemplateName": "issue_opened.liquid"
     }
   ],
   "partials":[],

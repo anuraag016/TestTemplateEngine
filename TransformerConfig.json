@@ -13,7 +13,7 @@
         "TemplateName": "issue_opened.handlebars"
     },
     {
-        "SourceType": "PullRequestOpened",
+        "SourceType": "IssueOpened",
         "ClientType": "Teams",
         "TemplateType": "Liquid",
         "TemplateName": "issue_opened.liquid"

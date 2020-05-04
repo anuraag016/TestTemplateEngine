@@ -1,5 +1,5 @@
 {
-  "cardRenderers":[
+  "cardRenderer":[
     {
         "SourceType": "IssueOpened",
         "ClientType": "Teams",
@@ -20,7 +20,7 @@
     }
   ],
   "partials":[],
-  "eventTransformers":[
+  "eventTransformer":[
     {
       "SourceType":"IssueOpened",
       "TemplateType":"HandleBars",

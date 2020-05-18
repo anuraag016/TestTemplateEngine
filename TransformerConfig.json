@@ -13,10 +13,10 @@
         "TemplateName": "issue_opened.handlebars"
     },
     {
-        "SourceType": "IssueOpened",
+        "SourceType": "Custom",
         "ClientType": "Teams",
-        "TemplateType": "Liquid",
-        "TemplateName": "issue_opened.liquid"
+        "TemplateType": "HandleBars",
+        "TemplateName": "hello_name.handlebars"
     }
   ],
   "partials":[],

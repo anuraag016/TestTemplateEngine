@@ -1,0 +1,11 @@
+name: GitHub CI
+
+on: repository_dispatch
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: PrintOutput
+      run: echo "The workflow ran successfully"

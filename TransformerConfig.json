@@ -7,10 +7,10 @@
         "TemplateName": "issue_opened.handlebars"
     },
     {
-        "SourceType": "PullRequestOpened",
+        "SourceType": "IssueSummary",
         "ClientType": "Teams",
         "TemplateType": "HandleBars",
-        "TemplateName": "issue_opened.handlebars"
+        "TemplateName": "issue_summary.handlebars"
     },
     {
         "SourceType": "Custom",

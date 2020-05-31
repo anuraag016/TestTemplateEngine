@@ -1,23 +1,50 @@
 {
-    "type": "AdaptiveCard",
     "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "type": "AdaptiveCard",
     "version": "1.2",
+    "speak": "<s>The forecast for Seattle ${formatEpoch(dt, 'MMMM d')} is mostly clear with a High of ${formatNumber((main.temp_max - 273) * 9 / 5 + 32, 0)} degrees and Low of ${formatNumber((main.temp_min - 273) * 9 / 5 + 32, 0)} degrees</s>",
     "body": [
         {
             "type": "TextBlock",
             "text": "Issues Summary",
-            "weight": "Bolder",
-            "size": "Large"
+            "size": "Large",
+            "isSubtle": true
         },
         {
             "type": "TextBlock",
-            "text": "Next level of ChatOps extensibility empowered by GitHub Workflow + Template Engine Action",
-            "weight": "Lighter",
-            "size": "Small"
+            "text": "",
+            "spacing": "None"
         },
         {
-            "type": "TextBlock",
-            "text": "You have {{ openIssues }} open issues out of which {{ openIssuesUnassigned }} are unassigned in your repository!!!!"
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": "auto",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Octicons-issue-opened.svg/1050px-Octicons-issue-opened.svg.png",
+                            "size": "Small"
+                        }
+                    ]
+                },
+                {
+                    "type": "Column",
+                    "width": "stretch",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "[Open Issues {{ openIssues }}]({{ openIssuesLink }})"
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "[Unassigned Issues {{ openIssuesUnassigned }}]({{ openIssuesUnassigned }})",
+                            "spacing": "None"
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }

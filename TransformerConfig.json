@@ -17,6 +17,12 @@
         "ClientType": "Teams",
         "TemplateType": "Liquid",
         "TemplateName": "issue_opened.liquid"
+    },
+    {
+        "SourceType": "Test",
+        "ClientType": "Slack",
+        "TemplateType": "HandleBars",
+        "TemplateName": "test.handlebars"
     }
   ],
   "partials":[],

@@ -2,12 +2,12 @@
 "type": "customPayload",
 "run_id": "{{run_id}}",
 "actual_payload":{
-  "blocks": [
+  "blocks": "blocks": [
     {
       "type": "section",
       "text": {
         "type": "mrkdwn",
-        "text": "@{{message.sender.login}} test 2"
+        "text": "@{{message.sender.login}} Please make sure to wait 30 minutes before merging your pull request after deploying to production, so that you can monitor sentry and datadog-dashboard "
       }
     },
     {
@@ -17,28 +17,28 @@
       "type": "section",
       "text": {
         "type": "mrkdwn",
-        "text": "Test"
+        "text": "Slack Integration <https://sentry.io/organizations/github/releases/044ca07aa6ff0de863da80a331c8aa67d602ca1a/?environment=staging&environment=production&project=5439832&statsPeriod=1h| Sentry Link to monitor>"
       }
     },
     {
       "type": "section",
       "text": {
         "type": "mrkdwn",
-        "text": "Test"
+        "text": "Teams Integration <https://sentry.io/organizations/github/releases/044ca07aa6ff0de863da80a331c8aa67d602ca1a/?environment=staging&environment=production&project=5439832&statsPeriod=1h|Sentry Link to monitor>"
       }
     },
     {
       "type": "section",
       "text": {
         "type": "mrkdwn",
-        "text": "Test"
+        "text": "Slack Integration <https://app.datadoghq.com/dashboard/d33-qus-vjy/slack-integration | DataDog dashboard >"
       }
     },
     {
       "type": "section",
       "text": {
         "type": "mrkdwn",
-        "text": "Test"
+        "text": "Teams Integration <https://app.datadoghq.com/dashboard/zrw-i7e-x23/ms-teams-integration | DataDog dashboard >"
       }
     }
   ]
